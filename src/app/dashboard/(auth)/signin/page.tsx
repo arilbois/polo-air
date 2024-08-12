@@ -16,6 +16,7 @@ const SignInPage = async () => {
   }
 
   return <FormSignIn />;
+  console.log("X");
 };
 
 export default SignInPage;
