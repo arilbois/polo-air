@@ -4,7 +4,16 @@ const nextConfig = {
         config.externals.push('@node-rs/bcrypt')
 
         return config
-    }
+    },
+    images: {
+        remotePatterns: [
+            {
+                protocol: 'https',
+                hostname: 'mfwesanxtivtlgkmpwbp.supabase.co'
+            }
+        ],
+        unoptimized: true
+    },
 };
 
 export default nextConfig;
