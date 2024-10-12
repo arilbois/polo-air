@@ -77,7 +77,7 @@ model FlightSeat {
   flightId String
   flight Flight @relation(fields: [flightId], references: [id])
   seatNumber String
-  isBoocked Boolean @default(false)
+  isBooked Boolean @default(false)
   type TypeSeat
   ticket Ticket?
 }
