@@ -45,7 +45,7 @@ export const generateSeatPerClass = (flightId: string) => {
       for (let i = 1; i <= 5; i++) {
         seats.push({
           seatNumber: seat + i,
-          type: className as TypeSeat,
+          type: className,
           flightId,
         });
       }

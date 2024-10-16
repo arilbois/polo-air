@@ -49,7 +49,7 @@ export async function handleSignIn(prevState: any, formData: FormData): Promise<
     }
 
     const session = await lucia.createSession(existingUser.id, {})
-    const sessionCookie = await lucia.createSessionCookie(session.id)
+    const sessionCookie = lucia.createSessionCookie(session.id)
 
     cookies().set(
         sessionCookie.name,

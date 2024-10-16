@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import React from "react";
 import { Metadata } from "next";
 import FormSignIn from "./form";
 import { getUser } from "@/lib/auth";
